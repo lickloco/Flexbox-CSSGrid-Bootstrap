@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Grids</title>
+	<style type="text/css">
+		.Grids{
+			display: grid;
+			grid-template-columns: 30% 40% 30%;
+			grid-column-gap: 5px;
+			grid-row-gap: 10px;
+			grid-auto-rows: minmax(100px, auto);
+		}
+
+		.Grids div{
+			background: blue;
+			padding: 10px;
+		}
+		.Grids div:nth-child(odd){
+			background: skyblue;
+		}
+	</style>
+</head>
+<body>
+<div class="Grids">
+	<div>
+		This is an example of grid
+	</div>
+	<div>
+		This is a very very long example of grid
+	</div>
+	<div>
+		This is another very very long example of grid
+	</div>
+	<div>
+		This is an example of grid
+	</div>
+	<div>
+		This is a very very long example of grid
+	</div>
+	<div>
+		This is another very very long example of grid
+	</div>
+</div>
+</body>
+</html>
